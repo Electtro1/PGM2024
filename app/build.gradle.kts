@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "br.fmu.pgm2024"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "br.fmu.pgm2024"
