@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GorjetaActivity">
+
+    <TextView
+        android:id="@+id/txtViewValorTotal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:text="$0.00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewTotal"
+        app:layout_constraintTop_toTopOf="@+id/txtViewTotal" />
+
+    <TextView
+        android:id="@+id/txtViewTotal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="437dp"
+        android:text="@string/txt_total_gorjeta"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtViewValorTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewGorjeta" />
+
+    <TextView
+        android:id="@+id/txtViewGorjeta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/txt_gorjeta_view"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewTotal"
+        app:layout_constraintEnd_toStartOf="@+id/txtViewValorGorjeta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewValorPorcentagem" />
+
+    <TextView
+        android:id="@+id/txtViewValorGorjeta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:text="$0.00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewGorjeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewGorjeta"
+        app:layout_constraintTop_toTopOf="@+id/txtViewGorjeta" />
+
+    <TextView
+        android:id="@+id/txtViewValorPorcentagem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="37dp"
+        android:text="0%"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewGorjeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewValor" />
+
+    <TextView
+        android:id="@+id/txtViewValorNumerico"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:text="$0.00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewValor"
+        app:layout_constraintTop_toTopOf="@+id/txtViewValor" />
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewValor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/txt_valor_gorjeta"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewValorPorcentagem"
+        app:layout_constraintEnd_toStartOf="@+id/txtViewValorNumerico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValor" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="71dp"
+        android:max="30"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewGorjeta"
+        app:layout_constraintEnd_toStartOf="@+id/txtViewValorPorcentagem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtViewValor" />
+</androidx.constraintlayout.widget.ConstraintLayout>

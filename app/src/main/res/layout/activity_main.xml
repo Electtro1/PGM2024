@@ -38,4 +38,14 @@
         android:text="Somar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:onClick="abrirGorjeta"
+        android:text="@string/txt_gorjeta"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">PGM2024</string>
     <string name="txt_somar">Somar</string>
+    <string name="txt_gorjeta">Gorjeta</string>
+    <string name="txt_valor_gorjeta">Valor</string>
+    <string name="txt_gorjeta_view">Gorjeta</string>
+    <string name="txt_total_gorjeta">Total</string>
 </resources>
