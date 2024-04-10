@@ -4,5 +4,14 @@
     <string name="txt_gorjeta">Gorjeta</string>
     <string name="txt_valor_gorjeta">Valor</string>
     <string name="txt_gorjeta_view">Gorjeta</string>
+    <string name="txt_database">Database</string>
     <string name="txt_total_gorjeta">Total</string>
+    <string name="txt_re">RE</string>
+    <string name="txt_nome">Nome</string>
+    <string name="txt_datadmissao">Data de Admissão</string>
+    <string name="txt_salario">Salário</string>
+    <string name="txt_cadastrar">Cadastrar</string>
+    <string name="txt_buscar">Buscar</string>
+    <string name="txt_atualizar">Atualizar</string>
+    <string name="txt_excluir">Excluir</string>
 </resources>
